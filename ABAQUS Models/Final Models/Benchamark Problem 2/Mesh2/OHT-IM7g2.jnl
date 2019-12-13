@@ -1,0 +1,363 @@
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].materials['IM7'].userMaterial.setValues(
+    mechanicalConstants=(164.0, 8.98, 8.98, 0.32, 0.32, 0.496, 5.02, 5.02, 3.0, 
+    2.9, 1.68, 0.1, 0.247, 0.1, 0.247, 0.08, 0.08, 0.08, 0.017, 0.01, 0.0111, 
+    0.0275, 0.0111, 0.0275, 0.0159, 0.0159))
+mdb.models['Model-1'].materials['IM7'].userMaterial.setValues(
+    mechanicalConstants=(164.0, 8.98, 8.98, 0.32, 0.32, 0.496, 5.02, 5.02, 3.0, 
+    2.9, 1.68, 0.1, 0.247, 0.1, 0.247, 0.08, 0.08, 0.08, 0.017, 0.01, 0.0111, 
+    0.0275, 0.0111, 0.0275, 0.0159, 0.0159, 0.0267, 0.081534, 0.024533, 
+    0.000256, 0.00156, 0.000256, 0.00156, 0.1, 2.0, 0.0, 0.0))
+# Save by Ammar on 2019_12_11-12.03.52; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs.changeKey(fromName='OHTIM72', toName='OHTIM7-Mesh2')
+# Save by Ammar on 2019_12_11-12.05.26; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_11-12.11.14; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_11-12.11.26; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_11-12.13.44; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+del mdb.jobs['Job-2inpu']
+mdb.jobs['OHTIM7-Mesh2'].setValues(userSubroutine=
+    'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\UMAT\\Development Space\\User Material Final\\UMAT\\Hashin-Rotem\\UMAT_HashinRotem_CDM.for')
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Problem during compilation - D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\UMAT\\Development Space\\User Material Final\\UMAT\\Hashin-Rotem\\UMAT_HashinRotem_CDM.for', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Problem during compilation - D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\UMAT\\Development Space\\User Material Final\\UMAT\\Hashin-Rotem\\UMAT_HashinRotem_CDM.for', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Problem during compilation - D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\UMAT\\Development Space\\User Material Final\\UMAT\\Hashin-Rotem\\UMAT_HashinRotem_CDM.for', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Problem during compilation - D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\UMAT\\Development Space\\User Material Final\\UMAT\\Hashin-Rotem\\UMAT_HashinRotem_CDM.for', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': '6208 elements have been defined with zero hour glass stiffness. You may use *hourglass stiffness or change the element type. The elements have been identified in element set ErrElemZeroHourGlassStiffness.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Models\\Workdirectory\\OHTIM7-Mesh2.odb', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'OHTIM7-Mesh2'})
+# Save by Ammar on 2019_12_11-12.23.47; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.setElementType(elemTypes=(ElemType(
+    elemCode=C3D8, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    distortionControl=DEFAULT, elemDeletion=ON), ElemType(elemCode=C3D6, 
+    elemLibrary=STANDARD), ElemType(elemCode=C3D4, elemLibrary=STANDARD)), 
+    regions=(
+    mdb.models['Model-1'].rootAssembly.instances['OHT-1'].cells.getSequenceFromMask(
+    ('[#ff ]', ), ), ))
+# Save by Ammar on 2019_12_11-12.25.43; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].steps['Step-1'].setValues(maxInc=0.05)
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF)
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Models\\Workdirectory\\OHTIM7-Mesh2.odb', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 2536, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'OHTIM7-Mesh2', 'memory': 152.0})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 5, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 6, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.14125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 6, 'stepTime': 0.14125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 7, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.19125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 7, 'stepTime': 0.19125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis is being terminated from a user subroutine', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['OHT-1'].faces.getSequenceFromMask(
+    ('[#10 #20 ]', ), ), name='Set-177')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Initial', 
+    distributionType=UNIFORM, fieldName='', localCsys=None, name='BC-3', 
+    region=mdb.models['Model-1'].rootAssembly.sets['Set-177'], u1=UNSET, u2=
+    UNSET, u3=SET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF)
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Models\\Workdirectory\\OHTIM7-Mesh2.odb', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 2480, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'OHTIM7-Mesh2', 'memory': 152.0})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 5, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 6, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.14125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 6, 'stepTime': 0.14125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 7, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.19125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 7, 'stepTime': 0.19125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis is being terminated from a user subroutine', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['OHT-1'].faces.getSequenceFromMask(
+    ('[#30c60000 #50 ]', ), ), name='Set-178')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Initial', 
+    distributionType=UNIFORM, fieldName='', localCsys=None, name='BC-4', 
+    region=mdb.models['Model-1'].rootAssembly.sets['Set-178'], u1=UNSET, u2=
+    UNSET, u3=SET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.jobs['OHTIM7-Mesh2'].submit(consistencyChecking=OFF)
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Models\\Workdirectory\\OHTIM7-Mesh2.odb', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8960, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'OHTIM7-Mesh2', 'memory': 152.0})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 5, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 6, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.14125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 6, 'stepTime': 0.14125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 7, 'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(STATUS, {'totalTime': 0.19125, 'attempts': 1, 
+    'timeIncrement': 0.05, 'increment': 7, 'stepTime': 0.19125, 'step': 1, 
+    'jobName': 'OHTIM7-Mesh2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis is being terminated from a user subroutine', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+mdb.jobs['OHTIM7-Mesh2']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'OHTIM7-Mesh2'})
+# Save by Ammar on 2019_12_11-12.42.31; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_11-12.50.24; build 2016 2015_09_24-22.31.09 126547

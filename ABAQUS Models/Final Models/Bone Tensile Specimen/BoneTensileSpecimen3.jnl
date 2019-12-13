@@ -1,0 +1,2868 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=500.0)
+mdb.models['Model-1'].sketches['__profile__'].rectangle(point1=(30.0, 50.0), 
+    point2=(50.0, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    37.7145080566406, 4.52586364746094), value=10.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    61.8517913818359, 30.1724090576172), value=25.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[3])
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3], point1=(
+    42.30712890625, 19.7736949920654))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], point1=(
+    40.0691452026367, 25.7417945861816))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(40.0, 10.0), point2=
+    (40.0, -20.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].VerticalDimension(textPoint=(
+    33.0477523803711, 14.4897937774658), value=15.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[4], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    26.5064392089844, -2.77246284484863), value=50.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[4], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[5])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(40.0, 5.0), point2=(
+    50.0, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].FilletByRadius(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6], nearPoint1=(
+    42.8960647583008, 11.120044708252), nearPoint2=(39.9022903442383, 
+    -0.855388641357422), radius=100.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(50.0, 20.0), point2=
+    (50.0, 17.8201999664307))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].ParallelConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__profile__'].geometry[4], 
+    entity2=mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], point1=(
+    50.62060546875, 20.9046058654785))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], point1=(
+    51.1713790893555, 20.563117980957))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9], point1=(
+    50.0147552490234, 18.0625457763672))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11], point1=(
+    50.0037422180176, 18.6353645324707))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4], point1=(
+    50.0588188171387, 20.1445198059082))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(50.0, 
+    18.3114256622073), point2=(50.0, 45.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[12])
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].undo()
+#* Nothing to undo.
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6], point1=(
+    40.1685333251953, -1.81997108459473))
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    displayDimensionsName=ON)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    numMinorGridIntervals=5)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(gridAuto=
+    OFF, gridSpacing=5.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(45.0, 15.0), point2=
+    (45.0, 7.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    48.761302947998, 11.4260835647583), value=50.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[6], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[7])
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].VerticalDimension(textPoint=(
+    41.0375823974609, 18.7267837524414), value=15.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[6], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    52.292781829834, -0.0238399505615234), value=50.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[6], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[7])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(45.0, 5.0), point2=(
+    50.0, 20.0))
+mdb.models['Model-1'].sketches['__profile__'].FilletByRadius(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], curve2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], nearPoint1=(
+    48.2370681762695, 13.9000549316406), nearPoint2=(44.6017684936523, 
+    -4.91847610473633), radius=100.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(50.0, 20.0), point2=
+    (50.0, 19.9885997772217))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].ParallelConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__profile__'].geometry[4], 
+    entity2=mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], point1=(
+    50.0031776428223, 20.0083274841309))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9], point1=(
+    50.0041160583496, 20.0070114135742))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[10], point1=(
+    49.9997024536133, 19.991512298584))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12], point1=(
+    49.9997024536133, 19.9989337921143))
+mdb.models['Model-1'].sketches['__profile__'].autoTrimCurve(curve1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4], point1=(
+    50.000171661377, 20.0050392150879))
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(50.0, 
+    19.9972239751541), point2=(50.0, 45.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[13])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(40.0, 45.0), point2=
+    (40.0, -45.0))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[14])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(40.0, -45.0), 
+    point2=(45.0, -45.0))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15])
+mdb.models['Model-1'].sketches['__profile__'].setAsConstruction(objectList=(
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14], ))
+mdb.models['Model-1'].sketches['__profile__'].setAsConstruction(objectList=(
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15], ))
+mdb.models['Model-1'].sketches['__profile__'].copyMirror(mirrorLine=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14], objectList=(
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[13], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15]))
+mdb.models['Model-1'].sketches['__profile__'].copyMirror(mirrorLine=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15], objectList=(
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[13], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[14], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[15], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[16], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[17], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[18], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[19], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[20], 
+    mdb.models['Model-1'].sketches['__profile__'].geometry[21]))
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-1', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-1'].BaseSolidExtrude(depth=5.0, sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].parts['Part-1'].PartitionCellByExtrudeEdge(cells=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1 ]', 
+    ), ), edges=(mdb.models['Model-1'].parts['Part-1'].edges[3], ), line=
+    mdb.models['Model-1'].parts['Part-1'].edges[37], sense=REVERSE)
+mdb.models['Model-1'].parts['Part-1'].PartitionCellByExtrudeEdge(cells=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#2 ]', 
+    ), ), edges=(mdb.models['Model-1'].parts['Part-1'].edges[20], ), line=
+    mdb.models['Model-1'].parts['Part-1'].edges[3], sense=FORWARD)
+mdb.models['Model-1'].parts['Part-1'].PartitionCellByExtrudeEdge(cells=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1 ]', 
+    ), ), edges=(mdb.models['Model-1'].parts['Part-1'].edges[35], ), line=
+    mdb.models['Model-1'].parts['Part-1'].edges[24], sense=FORWARD)
+mdb.models['Model-1'].parts['Part-1'].PartitionCellByExtrudeEdge(cells=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1 ]', 
+    ), ), edges=(mdb.models['Model-1'].parts['Part-1'].edges[39], ), line=
+    mdb.models['Model-1'].parts['Part-1'].edges[30], sense=FORWARD)
+mdb.models['Model-1'].parts['Part-1'].DatumPointByMidPoint(point1=
+    mdb.models['Model-1'].parts['Part-1'].vertices[30], point2=
+    mdb.models['Model-1'].parts['Part-1'].vertices[27])
+mdb.models['Model-1'].parts['Part-1'].ReferencePoint(point=
+    mdb.models['Model-1'].parts['Part-1'].datums[6])
+mdb.models['Model-1'].Material(name='Material-1')
+mdb.models['Model-1'].materials['Material-1'].Elastic(table=((2652.0, 0.35), ))
+mdb.models['Model-1'].HomogeneousSolidSection(material='Material-1', name=
+    'Section-1', thickness=None)
+mdb.models['Model-1'].parts['Part-1'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), sectionName='Section-1', thicknessAssignment=
+    FROM_SECTION)
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Part-1-1', 
+    part=mdb.models['Model-1'].parts['Part-1'])
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].Coupling(controlPoint=Region(referencePoints=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].referencePoints[7], 
+    )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE, localCsys=None, 
+    name='Constraint-1', surface=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#8 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].EncastreBC(createStepName='Initial', localCsys=None, 
+    name='BC-1', region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#2 ]', ), )))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Initial', 
+    distributionType=UNIFORM, fieldName='', localCsys=None, name='BC-2', 
+    region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#8 ]', ), )), u1=SET, u2=UNSET, u3=SET, ur1=SET, ur2=SET, ur3=SET)
+mdb.models['Model-1'].TabularAmplitude(data=((0.0, 0.0), (0.1, 0.1), (0.2, 
+    0.2), (0.3, 0.3), (0.4, 0.4), (0.5, 0.5), (0.6, 0.6), (0.7, 0.7), (0.8, 
+    0.8), (0.9, 0.9), (1.0, 1.0)), name='Amp-1', smooth=SOLVER_DEFAULT, 
+    timeSpan=STEP)
+mdb.models['Model-1'].ConcentratedForce(amplitude='Amp-1', cf2=2777.0, 
+    createStepName='Step-1', distributionType=UNIFORM, field='', localCsys=None
+    , name='Load-1', region=Region(referencePoints=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].referencePoints[7], 
+    )))
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=3.4)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='aek', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8024, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:22:49 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].materials['Material-1'].elastic.setValues(table=((172.4, 
+    6.9, 6.9, 0.25, 0.25, 0.25, 3.45, 3.45, 1.38), ), type=
+    ENGINEERING_CONSTANTS)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'Anisotropic material properties without a local orientation system have been defined for 208 elements. Anisotropic material properties must be defined in a local orientation system. The elements are identified in element set ErrElemAnisotropicMaterial.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationType=ROTATION_NONE, axis=AXIS_1, fieldName='', localCsys=
+    None, orientationType=GLOBAL, region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8684, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:27:59 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationField='', additionalRotationType=ROTATION_ANGLE, angle=
+    90.0, axis=AXIS_3, fieldName='', localCsys=None, orientationType=SYSTEM, 
+    region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 11944, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:30:40 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationType=ROTATION_NONE, axis=AXIS_2, fieldName='', localCsys=
+    None, orientationType=GLOBAL, region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_ORIENTATION)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 10204, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:36:16 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationType=ROTATION_NONE, axis=AXIS_1, fieldName='', localCsys=
+    None, orientationType=GLOBAL, region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8356, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:38:46 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].DatumAxisByPrincipalAxis(principalAxis=
+    XAXIS)
+mdb.models['Model-1'].parts['Part-1'].DatumAxisByPrincipalAxis(principalAxis=
+    XAXIS)
+mdb.models['Model-1'].parts['Part-1'].DatumAxisByPrincipalAxis(principalAxis=
+    YAXIS)
+mdb.models['Model-1'].parts['Part-1'].DatumAxisByPrincipalAxis(principalAxis=
+    ZAXIS)
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[1]
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[0]
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[0]
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[0]
+del mdb.models['Model-1'].parts['Part-1'].features['Datum axis-1']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum axis-2']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum axis-3']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum axis-4']
+mdb.models['Model-1'].parts['Part-1'].DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, line2=(0.0, 0.0, 32400.0), name='Datum csys-1', origin=
+    mdb.models['Model-1'].parts['Part-1'].vertices[30], point1=
+    mdb.models['Model-1'].parts['Part-1'].vertices[24])
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, fieldName='', localCsys=
+    mdb.models['Model-1'].parts['Part-1'].datums[18], orientationType=SYSTEM, 
+    region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 6616, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:51:50 2019', 
+    'jobName': 'aek'})
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[0]
+mdb.models['Model-1'].parts['Part-1'].DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, line2=(0.0, 100.0, 0.0), name='Datum csys-2', origin=
+    mdb.models['Model-1'].parts['Part-1'].vertices[24], point1=
+    mdb.models['Model-1'].parts['Part-1'].vertices[23])
+mdb.models['Model-1'].parts['Part-1'].DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, line1=(1.0, 0.0, 0.0), line2=(0.0, 1.0, 0.0), name=
+    'Datum csys-3', origin=(0.0, 0.0, 0.0))
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationField='', additionalRotationType=ROTATION_ANGLE, angle=
+    90.0, axis=AXIS_3, fieldName='', localCsys=
+    mdb.models['Model-1'].parts['Part-1'].datums[20], orientationType=SYSTEM, 
+    region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 12012, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 02:54:49 2019', 
+    'jobName': 'aek'})
+del mdb.models['Model-1'].parts['Part-1'].features['Datum csys-1']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum csys-2']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum csys-3']
+del mdb.models['Model-1'].parts['Part-1'].materialOrientations[0]
+mdb.models['Model-1'].parts['Part-1'].DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, name='Datum csys-1', origin=
+    mdb.models['Model-1'].parts['Part-1'].vertices[24], point1=
+    mdb.models['Model-1'].parts['Part-1'].InterestingPoint(
+    mdb.models['Model-1'].parts['Part-1'].edges[3], MIDDLE), point2=
+    mdb.models['Model-1'].parts['Part-1'].vertices[3])
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, fieldName='', localCsys=
+    mdb.models['Model-1'].parts['Part-1'].datums[23], orientationType=SYSTEM, 
+    region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1f ]', ), )), stackDirection=STACK_3)
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 6356, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:03:14 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].loads['Load-1'].setValues(cf2=1.0, distributionType=
+    UNIFORM, field='')
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 10764, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:03:52 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].loads['Load-1'].setValues(cf2=1000.0, distributionType=
+    UNIFORM, field='')
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8896, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:06:07 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].loads['Load-1'].setValues(cf2=1.0, distributionType=
+    UNIFORM, field='')
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 80 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 4484, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 25.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:10:00 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=1.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 2652 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 4572, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 227.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:18:10 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=3.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.5)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7432, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:21:13 2019', 
+    'jobName': 'aek'})
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 308, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Wed May 08 03:21:35 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7568, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 16:22:51 2019', 
+    'jobName': 'aek'})
+mdb.jobs['aek'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\aek.odb', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7744, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 13.0})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 16:26:08 2019', 
+    'jobName': 'aek'})
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 2336, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 16:27:53 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=3.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].setElementType(elemTypes=(ElemType(
+    elemCode=C3D8R, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    kinematicSplit=AVERAGE_STRAIN, hourglassControl=DEFAULT, 
+    distortionControl=DEFAULT), ElemType(elemCode=C3D6, elemLibrary=STANDARD, 
+    secondOrderAccuracy=OFF, distortionControl=DEFAULT), ElemType(
+    elemCode=C3D4, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    distortionControl=DEFAULT)), regions=(
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1f ]', 
+    ), ), ))
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7644, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 16:31:39 2019', 
+    'jobName': 'aek'})
+mdb.meshEditOptions.setValues(enableUndo=True, maxUndoCacheElements=0.5)
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(
+    additionalRotationField='', additionalRotationType=ROTATION_ANGLE, angle=
+    90.0)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7716, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 18:07:47 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=
+    0.0)
+mdb.models['Model-1'].materials['Material-1'].elastic.setValues(table=((6.9, 
+    172.4, 6.9, 0.25, 0.25, 0.25, 3.45, 3.45, 1.38), ))
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  THE TOTAL WORK DONE BY ALL STRAIN COMPONENTS MUST BE POSITIVE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].materials['Material-1'].elastic.setValues(table=((6.9, 
+    6.9, 172.4, 0.25, 0.25, 0.25, 3.45, 3.45, 1.38), ))
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  THE TOTAL WORK DONE BY ALL STRAIN COMPONENTS MUST BE POSITIVE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].materials['Material-1'].elastic.setValues(table=((6.9, 
+    172.4, 6.9, 0.25, 0.25, 0.25, 3.45, 3.45, 1.38), ))
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(
+    additionalRotationField='', additionalRotationType=ROTATION_ANGLE, angle=
+    90.0)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "STIFFNESS DEFINED BY ENGINEERING CONSTANTS IS NOT PHYSICALLY REASONABLE.  THE TOTAL WORK DONE BY ALL STRAIN COMPONENTS MUST BE POSITIVE.  CHECK CHOICE OF POISSON'S RATIOS", 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=
+    0.0)
+mdb.models['Model-1'].materials['Material-1'].elastic.setValues(table=((172.4, 
+    6.9, 6.9, 0.25, 0.25, 0.25, 3.45, 3.45, 1.38), ))
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 9004, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 18:32:34 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(
+    additionalRotationField='', additionalRotationType=ROTATION_ANGLE, angle=
+    45.0)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 5956, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 18:34:38 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(angle=
+    180.0)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8208, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 18:48:38 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.8)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.5)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.8)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 180 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8568, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 29.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:25:46 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.6)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 4616, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:27:59 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.4)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 231 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8816, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 31.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:30:12 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.2)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 324 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8988, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 35.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:31:50 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 336 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8452, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 35.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:33:45 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=1.6)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 748 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\WorkingDirectory\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7620, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 61.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu May 09 19:35:28 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 748 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile_Test_Isotropic UMAT_Solid Elements\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 3664, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 61.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Fri May 17 12:00:47 2019', 
+    'jobName': 'aek'})
+mdb.models['Model-1'].parts['Part-1'].deleteMesh()
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=3.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile_Test_Isotropic UMAT_Solid Elements\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8072, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Fri May 17 12:01:40 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile Test_UMAT_Orthotropic\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8260, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Thu Jun 13 23:46:18 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile Test_UMAT_Orthotropic\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 2244, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Mon Jun 17 23:24:32 2019', 
+    'jobName': 'aek'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(angle=
+    270.0, orientationType=SYSTEM)
+mdb.jobs['aek'].submit(consistencyChecking=OFF)
+mdb.jobs['aek']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile Test_UMAT_Orthotropic\\aek.odb', 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8804, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'aek', 'memory': 30.0})
+mdb.jobs['aek']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'aek'})
+mdb.jobs['aek']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'aek', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['aek']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'aek'})
+mdb.jobs['aek']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'aek'})
+mdb.jobs['aek']._Message(JOB_COMPLETED, {'time': 'Mon Jun 17 23:36:02 2019', 
+    'jobName': 'aek'})
+del mdb.jobs['aek']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='Job-2', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['Job-2'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile Test_UMAT_Orthotropic\\Job-2.odb', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 6444, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-2', 'memory': 30.0})
+mdb.jobs['Job-2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'Job-2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['Job-2']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(JOB_COMPLETED, {'time': 'Mon Jun 17 23:37:31 2019', 
+    'jobName': 'Job-2'})
+mdb.models['Model-1'].parts['Part-1'].materialOrientations[0].setValues(angle=
+    180.0, axis=AXIS_1, orientationType=SYSTEM)
+mdb.jobs['Job-2'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 189 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Tensile Test_UMAT_Orthotropic\\Job-2.odb', 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 3956, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-2', 'memory': 30.0})
+mdb.jobs['Job-2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'Job-2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['Job-2']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-2'})
+mdb.jobs['Job-2']._Message(JOB_COMPLETED, {'time': 'Mon Jun 17 23:39:25 2019', 
+    'jobName': 'Job-2'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+del mdb.models['Model-1'].parts['Part-1'].features['RP']
+del mdb.models['Model-1'].parts['Part-1'].features['Datum pt-1']
+mdb.models['Model-1'].rootAssembly.regenerate()
+del mdb.models['Model-1'].rootAssembly.features['Part-1-1']
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Part-1-1', 
+    part=mdb.models['Model-1'].parts['Part-1'])
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#10000 ]', ), ), name='Set-1')
+mdb.models['Model-1'].rootAssembly.Set(name='Set-2', nodes=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#0:25 #2000 ]', ), ))
+del mdb.models['Model-1'].constraints['Constraint-1']
+del mdb.models['Model-1'].boundaryConditions['BC-1']
+del mdb.models['Model-1'].boundaryConditions['BC-2']
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#10000 ]', ), ), name='Set-4')
+mdb.models['Model-1'].EncastreBC(createStepName='Initial', localCsys=None, 
+    name='Fixed', region=mdb.models['Model-1'].rootAssembly.sets['Set-4'])
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#400000 ]', ), ), name='Set-5')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Initial', 
+    distributionType=UNIFORM, fieldName='', localCsys=None, name='Disp-Y', 
+    region=mdb.models['Model-1'].rootAssembly.sets['Set-5'], u1=UNSET, u2=SET, 
+    u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+del mdb.models['Model-1'].boundaryConditions['Disp-Y']
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#400000 ]', ), ), name='Set-6')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'DISP-Y', region=mdb.models['Model-1'].rootAssembly.sets['Set-6'], u1=UNSET
+    , u2=20.0, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+del mdb.models['Model-1'].rootAssembly.sets['Set-5']
+del mdb.models['Model-1'].rootAssembly.sets['Set-1']
+del mdb.models['Model-1'].rootAssembly.sets['Set-2']
+mdb.models['Model-1'].rootAssembly.sets.changeKey(fromName='Set-4', toName=
+    'RF')
+mdb.models['Model-1'].rootAssembly.sets.changeKey(fromName='Set-6', toName=
+    'DISP')
+mdb.models['Model-1'].historyOutputRequests['H-Output-1'].setValues(rebar=
+    EXCLUDE, region=mdb.models['Model-1'].rootAssembly.sets['RF'], 
+    sectionPoints=DEFAULT, variables=('RF1', 'RF2', 'RF3', 'RM1', 'RM2', 'RM3', 
+    'ALLAE', 'ALLCD', 'ALLDMD', 'ALLEE', 'ALLFD', 'ALLIE', 'ALLJD', 'ALLKE', 
+    'ALLKL', 'ALLPD', 'ALLQB', 'ALLSE', 'ALLSD', 'ALLVD', 'ALLWK', 'ETOTAL'))
+del mdb.models['Model-1'].loads['Load-1']
+mdb.models['Model-1'].parts['Part-1'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1f ]', 
+    ), ))
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].steps['Step-1'].setValues(extrapolation=NONE, initialInc=
+    0.01, maxInc=0.1, maxNumInc=10000, minInc=1e-09)
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=4.0)
+mdb.models['Model-1'].parts['Part-1'].setElementType(elemTypes=(ElemType(
+    elemCode=C3D8R, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    kinematicSplit=AVERAGE_STRAIN, hourglassControl=DEFAULT, 
+    distortionControl=DEFAULT), ElemType(elemCode=C3D6, elemLibrary=STANDARD, 
+    secondOrderAccuracy=OFF, distortionControl=DEFAULT), ElemType(
+    elemCode=C3D4, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    distortionControl=DEFAULT)), regions=(
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1f ]', 
+    ), ), ))
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1f ]', 
+    ), ))
+mdb.models['Model-1'].parts['Part-1'].seedEdgeByNumber(constraint=FINER, edges=
+    mdb.models['Model-1'].parts['Part-1'].edges.getSequenceFromMask((
+    '[#5000c500 #2400 ]', ), ), number=16)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].parts['Part-1'].deleteMesh(regions=
+    mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(('[#1f ]', 
+    ), ))
+mdb.models['Model-1'].parts['Part-1'].seedEdgeByNumber(constraint=FINER, edges=
+    mdb.models['Model-1'].parts['Part-1'].edges.getSequenceFromMask((
+    '[#441200 ]', ), ), number=6)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.Set(name='dipsy', nodes=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].nodes.getSequenceFromMask(
+    mask=('[#80000000 ]', ), ))
+del mdb.jobs['Job-2']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='TS', nodalOutputPrecision=FULL, numCpus=
+    1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=ANALYSIS, 
+    userSubroutine='', waitHours=0, waitMinutes=0)
+del mdb.models['Model-1'].boundaryConditions['Fixed']
+del mdb.models['Model-1'].boundaryConditions['DISP-Y']
+mdb.models['Model-1'].EncastreBC(createStepName='Initial', localCsys=None, 
+    name='FixedBottom', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#10000 ]', ), )))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'TopDisp', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#400000 ]', ), )), u1=UNSET, u2=20.0, u3=UNSET, ur1=UNSET, ur2=
+    UNSET, ur3=UNSET)
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['TS'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['TS']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ALLFD IS ONLY AVAILABLE FOR THE WHOLE MODEL', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ALLKL IS ONLY AVAILABLE FOR THE WHOLE MODEL', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ALLQB IS ONLY AVAILABLE FOR THE WHOLE MODEL', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ALLWK IS ONLY AVAILABLE FOR THE WHOLE MODEL', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ETOTAL IS ONLY AVAILABLE FOR THE WHOLE MODEL', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS.odb', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 9248, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS', 'memory': 10.0})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 20:59:06 2019', 
+    'jobName': 'TS'})
+mdb.models['Model-1'].historyOutputRequests['H-Output-1'].setValues(variables=(
+    'RF1', 'RF2', 'RF3', 'RM1', 'RM2', 'RM3'))
+mdb.jobs['TS'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['TS']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST RM3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS.odb', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 9232, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS', 'memory': 10.0})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:00:22 2019', 
+    'jobName': 'TS'})
+mdb.models['Model-1'].historyOutputRequests['H-Output-1'].setValues(variables=(
+    'RF1', 'RF2', 'RF3'))
+mdb.models['Model-1'].historyOutputRequests['H-Output-1'].setValues(region=
+    mdb.models['Model-1'].rootAssembly.sets['dipsy'], variables=('U1', 'U2', 
+    'U3', 'UR1', 'UR2', 'UR3', 'RF1', 'RF2', 'RF3'))
+mdb.models['Model-1'].historyOutputRequests['H-Output-1'].setValues(variables=(
+    'U2', ))
+mdb.models['Model-1'].HistoryOutputRequest(createStepName='Step-1', name=
+    'H-Output-2', rebar=EXCLUDE, region=
+    mdb.models['Model-1'].rootAssembly.sets['RF'], sectionPoints=DEFAULT, 
+    variables=('RF2', ))
+mdb.jobs['TS'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['TS']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS.odb', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 2708, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS', 'memory': 10.0})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:03:29 2019', 
+    'jobName': 'TS'})
+mdb.jobs['TS'].submit(consistencyChecking=OFF)
+mdb.jobs['TS']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS.odb', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 5308, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS', 'memory': 27.0})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'TS', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.3178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 8, 'stepTime': 0.3178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.4178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 9, 'stepTime': 0.4178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.5178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 10, 'stepTime': 0.5178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.6178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 11, 'stepTime': 0.6178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.7178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 12, 'stepTime': 0.7178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.8178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 13, 'stepTime': 0.8178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 0.9178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 14, 'stepTime': 0.9178125, 'step': 1, 
+    'jobName': 'TS', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'TS'})
+mdb.jobs['TS']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 0.0821875000000001, 'increment': 15, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'TS', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS'})
+mdb.jobs['TS']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS'})
+mdb.jobs['TS']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:03:52 2019', 
+    'jobName': 'TS'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.saveAs(pathName='D:/COME TUM/Semester 1/Software Lab/Abaqus/Models/Tensile_Test_Solid Elements/Tensile_Test_Solid2.cae')
+del mdb.models['Model-1'].boundaryConditions['TopDisp']
+del mdb.models['Model-1'].boundaryConditions['FixedBottom']
+mdb.models['Model-1'].EncastreBC(createStepName='Initial', localCsys=None, 
+    name='fixed bottom', region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#3 ]', ), )))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'TopDisp', region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#18 ]', ), )), u1=UNSET, u2=20.0, u3=UNSET, ur1=UNSET, ur2=UNSET, 
+    ur3=UNSET)
+del mdb.jobs['TS']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='TS2', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['TS2'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['TS2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS2.odb', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8096, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS2', 'memory': 10.0})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:18:37 2019', 
+    'jobName': 'TS2'})
+mdb.jobs['TS2'].submit(consistencyChecking=OFF)
+mdb.jobs['TS2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS2.odb', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 6280, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS2', 'memory': 27.0})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'TS2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.3178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 8, 'stepTime': 0.3178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.4178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 9, 'stepTime': 0.4178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.5178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 10, 'stepTime': 0.5178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.6178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 11, 'stepTime': 0.6178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.7178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 12, 'stepTime': 0.7178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.8178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 13, 'stepTime': 0.8178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.9178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 14, 'stepTime': 0.9178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 0.0821875000000001, 'increment': 15, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'TS2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS2']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:18:55 2019', 
+    'jobName': 'TS2'})
+# Save by Ammar on 2019_12_07-21.21.05; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+del mdb.models['Model-1'].boundaryConditions['TopDisp']
+del mdb.models['Model-1'].boundaryConditions['fixed bottom']
+mdb.models['Model-1'].EncastreBC(createStepName='Initial', localCsys=None, 
+    name='fixedbottom', region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#2 ]', ), )))
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'topdisp', region=Region(
+    cells=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    mask=('[#8 ]', ), )), u1=UNSET, u2=20.0, u3=UNSET, ur1=UNSET, ur2=UNSET, 
+    ur3=UNSET)
+mdb.jobs['TS2'].submit(consistencyChecking=OFF)
+mdb.jobs['TS2']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS2.odb', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 8036, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS2', 'memory': 27.0})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'TS2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.3178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 8, 'stepTime': 0.3178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.4178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 9, 'stepTime': 0.4178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.5178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 10, 'stepTime': 0.5178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.6178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 11, 'stepTime': 0.6178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.7178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 12, 'stepTime': 0.7178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.8178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 13, 'stepTime': 0.8178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 0.9178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 14, 'stepTime': 0.9178125, 'step': 1, 
+    'jobName': 'TS2', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS2']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 0.0821875000000001, 'increment': 15, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'TS2', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS2']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS2'})
+mdb.jobs['TS2']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:23:24 2019', 
+    'jobName': 'TS2'})
+del mdb.jobs['TS2']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='TS3', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['TS3'].submit(consistencyChecking=OFF)
+mdb.jobs['TS3']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Windows\\system32\\TS3.odb', 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 7372, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS3', 'memory': 27.0})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'TS3', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.3178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 8, 'stepTime': 0.3178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.4178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 9, 'stepTime': 0.4178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.5178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 10, 'stepTime': 0.5178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.6178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 11, 'stepTime': 0.6178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.7178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 12, 'stepTime': 0.7178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.8178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 13, 'stepTime': 0.8178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.9178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 14, 'stepTime': 0.9178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 0.0821875000000001, 'increment': 15, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'TS3', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS3']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(JOB_COMPLETED, {'time': 'Sat Dec 07 21:24:26 2019', 
+    'jobName': 'TS3'})
+# Save by Ammar on 2019_12_07-21.26.06; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].boundaryConditions.changeKey(fromName='fixedbottom', 
+    toName='FixedBottom')
+mdb.models['Model-1'].boundaryConditions.changeKey(fromName='topdisp', toName=
+    'DispTop')
+# Save by Ammar on 2019_12_08-07.35.56; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-07.35.56; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-07.35.57; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.Set(cells=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#2 ]', ), ), name='RF')
+# Save by Ammar on 2019_12_08-07.37.37; build 2016 2015_09_24-22.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['TS3'].submit(consistencyChecking=OFF)
+mdb.jobs['TS3']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 0, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'D:\\COME TUM\\Semester 1\\Software Lab\\Abaqus\\Models\\Tensile_Test_Solid Elements\\TS3.odb', 
+    'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'Ammar-PC', 'handle': 848, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'TS3', 'memory': 27.0})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'TS3', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.3178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 8, 'stepTime': 0.3178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.4178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 9, 'stepTime': 0.4178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.5178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 10, 'stepTime': 0.5178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.6178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 11, 'stepTime': 0.6178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.7178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 12, 'stepTime': 0.7178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.8178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 13, 'stepTime': 0.8178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 0.9178125, 'attempts': 1, 
+    'timeIncrement': 0.1, 'increment': 14, 'stepTime': 0.9178125, 'step': 1, 
+    'jobName': 'TS3', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['TS3']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 0.0821875000000001, 'increment': 15, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'TS3', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['TS3']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'TS3'})
+mdb.jobs['TS3']._Message(JOB_COMPLETED, {'time': 'Sun Dec 08 07:41:15 2019', 
+    'jobName': 'TS3'})
+# Save by Ammar on 2019_12_08-07.43.31; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-07.45.25; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-07.45.42; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-08.06.45; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-08.07.02; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-08.07.35; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-08.11.29; build 2016 2015_09_24-22.31.09 126547
+# Save by Ammar on 2019_12_08-08.22.29; build 2016 2015_09_24-22.31.09 126547

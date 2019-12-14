@@ -1,16 +1,16 @@
-# Progressive Damage Analysis of Laminated Composites
+# Development of the Failure Criteria for Composites 
 
-- [Progressive Damage Analysis of Laminated Composites](#progressive-damage-analysis-of-laminated-composites)
-  - [Progressive damage details blah, blah, blah](#progressive-damage-details-blah-blah-blah)
-  - [Another title](#another-title)
+- [Development of the Failure Criteria for Composites](#development-of-the-failure-criteria-for-composites)
+  - [Introduction](#introduction)
+  - [Implementation](#implementation)
 
 We deal with progressive stuff
 
-## Progressive damage details blah, blah, blah
+## Introduction
 
-Here is an image
+<img src="resources/introduction.png" width="500">
 
-![Anzthing here](resources/Progressive_Damage.png)
+![test](https://github.com/favicon.ico)
 
 More text here
 
@@ -32,7 +32,13 @@ This is _italic_
 
 This is underline
 
-## Another title
+## Implementation
+
+Here is an image
+
+![Anzthing here](resources/Progressive_Damage.png)
+
+
 
 Easy stuff
 

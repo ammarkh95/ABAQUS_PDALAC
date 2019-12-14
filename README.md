@@ -1,6 +1,6 @@
-# Progressive Damage
+# Progressive Damage Analysis of Laminated Composites
 
-- [Progressive Damage](#progressive-damage)
+- [Progressive Damage Analysis of Laminated Composites](#progressive-damage-analysis-of-laminated-composites)
   - [Progressive damage details blah, blah, blah](#progressive-damage-details-blah-blah-blah)
   - [Another title](#another-title)
 

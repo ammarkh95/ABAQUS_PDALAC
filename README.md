@@ -5,7 +5,35 @@
 
 - [Development of the Failure Criteria for Composites](#development-of-the-failure-criteria-for-composites)
   - [Overview &amp; Motivation](#overview-amp-motivation)
-  - [User Material Subroutines](#user-material-subroutines)
+  - [User Material Subroutines (UMAT/VUMAT)](#user-material-subroutines-umatvumat)
+    - [1.UMAT Subroutine for implict FEM analysis](#1umat-subroutine-for-implict-fem-analysis)
+    - [2.VUMAT Subroutine for explicit FEM analysis](#2vumat-subroutine-for-explicit-fem-analysis)
+  - [Progressive Damage Analysis Framework](#progressive-damage-analysis-framework)
+    - [1.Constitutive Law](#1constitutive-law)
+    - [2.Failure Theories](#2failure-theories)
+    - [3.Damage Models](#3damage-models)
+  - [Testing and Results](#testing-and-results)
+    - [1.Uni-Axial Plate Problem](#1uni-axial-plate-problem)
+    - [2.Open-Hole Tensile Specimen](#2open-hole-tensile-specimen)
+    - [3.Worldwide Failure Exercise](#3worldwide-failure-exercise)
+  - [User Guide Manual](#user-guide-manual)
+    - [UMAT Subroutines](#umat-subroutines)
+    - [PDALAC Testing Program](#pdalac-testing-program)
+  - [References](#references)
+<li>The characteristic element length can be used to define softening behavior based on fracture energy concepts.</li>
+</ul>](#ul-lithe-characteristic-element-length-can-be-used-to-define-softening-behavior-based-on-fracture-energy-conceptsli-ul)
+    - [VUMAT Subroutine for explicit FEM analysis](#vumat-subroutine-for-explicit-fem-analysis)
+  - [Progressive Damage Analysis Framework](#progressive-damage-analysis-framework)
+    - [Constitutive Law](#constitutive-law)
+    - [Failure Theories](#failure-theories)
+    - [Damage Models](#damage-models)
+  - [Testing and Results](#testing-and-results)
+    - [Uni-Axial Plate Problem](#uni-axial-plate-problem)
+    - [Open-Hole Tensile Specimen](#open-hole-tensile-specimen)
+    - [Worldwide Failure Exercise](#worldwide-failure-exercise)
+  - [User Guide Manual](#user-guide-manual)
+    - [UMAT Subroutines](#umat-subroutines)
+    - [PDALAC Testing Program](#pdalac-testing-program)
 
 
 ## Overview & Motivation
@@ -31,32 +59,34 @@ researchers to visualize the progressive damage analysis process without the nee
 FEA, the developed code is written in vectorized form which can be easily translated to work
 with multiple standard FEM packages (e.g. ABAQUS, ANSYS, LS-DYNA)</p>
 
-<img src="resources/introduction.png" width="500">
+<p align="center">
+<img src="resources/introduction.png" width="750">
+</p>
 
-More text here
+----------------------------------------------------------------------------------------------
+## User Material Subroutines (UMAT/VUMAT)
 
-- 1
-- 2
-- 3
-  
-Then we have numbered list
+<p style="text-align: justify;">
+User subroutines are special features that are provided to increase the functionality of several Abaqus capabilities for which the usual data input methods alone may be too restrictive. The available subroutines offer a variety of options, from specifying user-defined loading or initial conditions, to the creation of user-defined elements. Thus, providing an extremely powerful and flexible tool for analysis. The subroutines are typically written as FORTRAN code and must be included in a model when executing the analysis. User subroutines should be written with great care. To ensure their successful implementation, the rules and guidelines below should be followed. For a detailed discussion of the individual subroutines, including coding interfaces and requirements, refer to the Abaqus User Subroutines Reference Manual</p> 
 
-1. Num1
-2. Num2
-3. Num3
+[_Abaqus User Subroutines Reference Manual_](http://dsk.ippt.pan.pl/docs/abaqus/v6.13/books/sub/default.htm)
 
-Here is a link to [google](https://www.google.com)
+----------------------------------------------------------------------------------------------
+### 1.UMAT Subroutine for implict FEM analysis
+UMAT is the user subroutine for the definition of user based constitutive models in ABAQUS/Standard solver.
 
-This is **bold**
+According to the ABAQUS documentation the UMAT subroutine:
+- Can be used to define the mechanical constitutive behavior of the material.
+- Can be used with any procedure that includes mechanical behavior.
+- Can use solution-dependent variables.
+- Must update at each solution increment, the stresses and the solution dependent variables.
+- Must provide the material Jacobian matrix (incremental stresses and strains relationship).
 
-This is _italic_
+The UMAT subroutine header is shown below:
 
-This is underline
+The include statement sets the proper precision for floating point variables (REAL*8 on most machines).
 
-## User Material Subroutines
-
-![Anything here](resources/Progressive_Damage.png)
-
+The material name, CMNAME, is an 8-byte character variable.
 
 **UMAT Header**
 
@@ -76,14 +106,72 @@ C
      3 PROPS(NPROPS),COORDS(3),DROT(3,3),DFGRD0(3,3),DFGRD1(3,3)
 
 
-      user coding to define DDSDDE, STRESS, STATEV, SSE, SPD, SCD
-      and, if necessary, RPL, DDSDDT, DRPLDE, DRPLDT, PNEWDT
+      !user coding to define DDSDDE, STRESS, STATEV, SSE, SPD, SCD
+      !and, if necessary, RPL, DDSDDT, DRPLDE, DRPLDT, PNEWDT
 
 
       RETURN
       END
 ```
 
+**UMAT Variables**
+
+1. The following quantities are available in UMAT:
+- Stress, strain, and SDVs at the start of the increment
+- Strain increment, rotation increment, and deformation gradient at the start and end of the increment
+- Total and incremental values of time, temperature, and user-defined field variables
+- Material constants, material point position, and a characteristic element length
+- Element, integration point, and composite layer number (for shells and layered solids)
+- Current step and increment numbers
+
+2. The following quantities must be defined:
+- Stress, SDVs, and material Jacobian
+The following variables may be defined:
+- Strain energy, plastic dissipation, and “creep” dissipation
+- Suggested new (reduced) time increment
+
+Complete descriptions of all parameters are provided in the UMAT section in Chapter 24 of the ABAQUS/Standard User’s
+Manual.
+
+**UMAT Utilities**
+
+1. Utility routines SINV, SPRINC, SPRIND, and ROTSIG can be called to assist in coding UMAT.
+- SINV will return the first and second invariants of a tensor.
+- SPRINC will return the principal values of a tensor.
+- SPRIND will return the principal values and directions of a tensor.
+- ROTSIG will rotate a tensor with an orientation matrix.
+- XIT will terminate an analysis and close all files associated with the analysis properly.
+
+For details regarding the arguments required in making these calls, refer to the UMAT section in Chapter 24 of the
+ABAQUS/Standard User’s Manual 
+
+
+**UMAT Conventions**
+
+1. Stresses and strains are stored as vectors.
+- For plane stress elements: σ11 , σ22 , σ12 .
+- For (generalized) plane strain and axisymmetric elements: σ11 , σ22 , σ33 , σ12 .
+- For three-dimensional elements: σ11 , σ22 , σ33 , σ12 , σ13 , σ23 .
+  
+The shear strain is stored as engineering shear strain, γ 12 = 2ε12.
+
+The deformation gradient, Fij , is always stored as a threedimensional matrix.
+
+**Usage Hints**
+
+1. At the start of a new increment, the strain increment is extrapolated from the previous increment.
+- This extrapolation, which may sometimes cause trouble, is turned off with `∗STEP, EXTRAPOLATION=NO`
+  
+2. If the strain increment is too large, the variable PNEWDT can be used to suggest a reduced time increment.
+- The code will abandon the current time increment in favor of a time increment given by PNEWDT*DTIME.
+- The characteristic element length can be used to define softening behavior based on fracture energy concepts.
+  
+----------------------------------------------------------------------------------------------
+
+### 2.VUMAT Subroutine for explicit FEM analysis
+<p style="text-align: justify;">In ABAQUS/Explicit the user-defined material model is implemented in user subroutine VUMAT. In the VUMAT subroutine. The Stress and SDVs at the end of each solution increment must be defined. With comparison to the UMAT subroutine, the VUMAT subroutine has vectorized interface. In VUMAT the data are passed in and out in large blocks (dimension nblock), where each entry in an array of length nblock corresponds to a single material point. All material points in the same block have the same material name and belong to the same element type.</p>
+
+The VUMAT subroutine header is shown below:
 
 **VUMAT Header**
 
@@ -119,12 +207,179 @@ C
 C
 
       do 100 km = 1,nblock
-        user coding
+        !user coding
   100 continue
 
       return
       end
 ```
+
+**VUMAT Variables**
+
+1. The following quantities are available in VUMAT, but they cannot be redefined:
+
+- Stress, stretch, and SDVs at the start of the increment
+- Relative rotation vector and deformation gradient at the start and end of an increment and strain increment
+- Total and incremental values of time, temperature, and user-defined field variables at the start and end of an increment
+- Material constants, density, material point position, and a characteristic element length
+- Internal and dissipated energies at the beginning of the increment
+- Number of material points to be processed in a call to the routine (NBLOCK)
+
+2. The following quantities must be defined:
+
+- Stress and SDVs at the end of an increment
+  
+3. The following variables may be defined:
+   
+- Internal and dissipated energies at the end of the increment
+  
+Complete descriptions of all parameters are provided in the VUMAT section in Chapter 21 of the ABAQUS/Explicit User’s Manual.
+
+**VUMAT Conventions**
+
+1. Stresses and strains are stored as vectors.
+- For plane stress elements: σ11 , σ22 , σ12 .
+- For plane strain and axisymmetric elements: σ11 , σ22 , σ33 , σ12 .
+- For three-dimensional elements: σ11 , σ22 , σ33 , σ12 , σ23 ,σ13 .
+- For three-dimensional elements, this storage scheme is inconsistent with that for ABAQUS/Standard.
+- The shear strain is stored as tensor shear strains: ε12 =1/2(γ12) 
+
+2. The deformation gradient is stored similar to the way in which symmetric tensors are stored.
+- For plane stress elements: F11, F22, F12, F21.
+- For plane strain and axisymmetric elements: F11, F22, F33, F12, F21.
+- For three-dimensional elements: F11, F22, F33, F12, F23, F31, F21, F32 , F13.
+
+
+**VUMAT Formulation Aspects**
+
+1. In VUMAT the data are passed in and out in large blocks (dimension NBLOCK). NBLOCK typically is equal to 64 or 128.
+- Each entry in an array of length NBLOCK corresponds to a single material point. All material points in the same block
+have the same material name and belong to the same element type.
+
+2. This structure allows vectorization of the routine.
+- A vectorized VUMAT should make sure that all operations are done in vector mode with NBLOCK the vector length.
+
+3. In vectorized code, branching inside loops should be avoided.
+- Element type-based branching should be outside the NBLOCK loop.
+
+----------------------------------------------------------------------------------------------
+
+## Progressive Damage Analysis Framework
+
+<p align="left">
+<img src="resources/Progressive_Damage.png" width="750">
+</p>
+
+----------------------------------------------------------------------------------------------
+### 1.Constitutive Law
+
+**Material Modelling Scales**
+
+- Can be studied on three different length scales. 
+- Focus on macro-scale level in this project.
+- Laminate properties on macroscale can be obtained from standard test data or through homogenization methods
+
+<p align="left">
+<img src="resources/Picture5.png" width="750">
+</p>
+
+<p align="left">
+<img src="resources/Picture3.png" width="750">
+</p>
+
+
+**Orthotropic Elasticity**
+
+- General Hooke's Law for orthotropic elasticity
+
+- Explicit consideration for 3D stress states
+
+<p align="left">
+<img src="resources/Picture4.png" width="600">
+</p>
+
+- Constitutive matrix to satisfy stability requirements
+
+<p align="left">
+<img src="resources/Picture6.png" width="400">
+</p>
+
+----------------------------------------------------------------------------------------------
+### 2.Failure Theories
+<p align="left">
+<img src="resources/Picture7.jpg" width="400">
+</p>
+
+----------------------------------------------------------------------------------------------
+### 3.Damage Models
+<p align="left">
+<img src="resources/Picture8.jpg" width="400">
+</p>
+
+----------------------------------------------------------------------------------------------
+
+## Testing and Results
+
+### 1.Uni-Axial Plate Problem
+Reference: **_Knight Jr, N. F., & Reeder, J. R. (2006). User-defined material model for progressive failure analysis_**
+
+**Input Parameters**
+
+<p align="left">
+<img src="resources/Benchmark Problem.bmp" width="450">
+<img src="resources/Picture9.jpg" width="600">
+</p>
+
+**Benchmark Results**
+
+<p align="left">
+<img src="resources/Picture13.png" width="500">
+<img src="resources/Picture14.png" width="405">
+</p>
+
+
+**UMAT Results**
+<p align="left">
+<img src="resources/Picture11.png" width="500">
+<img src="resources/Picture12.png" width="523">
+</p>
+
+
+
+----------------------------------------------------------------------------------------------
+### 2.Open-Hole Tensile Specimen
+Reference:
+
+----------------------------------------------------------------------------------------------
+### 3.Worldwide Failure Exercise
+Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)_**
+
+- Verification of Puck Criteria Implementation for Inter Fiber Failure
+
+- Predict the fracture plane oreientation for Carbon Epoxy composite
+
+**Input Parameters**
+
+<p align="left">
+<img src="resources/Picture17.png" width="600">
+</p>
+
+**Benchmark Results**
+<p align="left">
+<img src="resources/Picture18.png" width="600">
+</p>
+
+
+**UMAT Results**
+<p align="left">
+<img src="resources/Picture19.png" width="600">
+</p>
+
+----------------------------------------------------------------------------------------------
+
+## User Guide Manual
+
+### UMAT Subroutines 
 
 **User-defined property data for the UMAT subroutine**
 
@@ -161,7 +416,6 @@ C
 |57,58|E11F, ANU12F|Puck: Fiber elastic modulus and Poisson ratio|
 
 
-
 **UMAT-defined solution-dependent variables**
 
 |**STATEV Array Entry**|**Variable Name**|**Description**|
@@ -180,5 +434,16 @@ C
 |12| fflags(6)| Failure flag for sixth failure mode|
 |13| DelEl| Element deletion variable|
 
+----------------------------------------------------------------------------------------------
+### PDALAC Testing Program 
 
-This is inline code `To Be Continued...`
+<p align="left">
+<img src="resources/Picture15.png" width="500">
+<img src="resources/Picture16.png" width="523">
+</p>
+
+
+----------------------------------------------------------------------------------------------
+
+
+## References

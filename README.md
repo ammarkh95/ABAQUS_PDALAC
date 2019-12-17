@@ -17,8 +17,11 @@
     - [2.Open-Hole Tensile Specimen](#2open-hole-tensile-specimen)
     - [3.Worldwide Failure Exercise](#3worldwide-failure-exercise)
   - [User Guide Manual](#user-guide-manual)
-    - [UMAT Subroutines](#umat-subroutines)
-    - [PDALAC Testing Program](#pdalac-testing-program)
+    - [Linking FORTRAN with ABAQUS](#linking-fortran-with-abaqus)
+    - [Running UMAT,VUMAT Subroutines in ABAQUS GUI](#running-umatvumat-subroutines-in-abaqus-gui)
+    - [UMAT Input Parameters Table](#umat-input-parameters-table)
+    - [UMAT-defined solution-dependent variables](#umat-defined-solution-dependent-variables)
+    - [Debugging and Testing](#debugging-and-testing)
   - [References](#references)
 <li>The characteristic element length can be used to define softening behavior based on fracture energy concepts.</li>
 </ul>](#ul-lithe-characteristic-element-length-can-be-used-to-define-softening-behavior-based-on-fracture-energy-conceptsli-ul)
@@ -326,15 +329,15 @@ Reference: **_Knight Jr, N. F., & Reeder, J. R. (2006). User-defined material mo
 **Input Parameters**
 
 <p align="left">
-<img src="resources/Benchmark Problem.bmp" width="450">
+<img src="resources/Benchmark Problem.jpg" width="450">
 <img src="resources/Picture9.jpg" width="600">
 </p>
 
 **Benchmark Results**
 
-<p align="left">
-<img src="resources/Picture13.png" width="500">
-<img src="resources/Picture14.png" width="405">
+<p align="center">
+<img src="resources/Picture13.png" width="490">
+<img src="resources/Picture14.png" width="400">
 </p>
 
 
@@ -348,9 +351,34 @@ Reference: **_Knight Jr, N. F., & Reeder, J. R. (2006). User-defined material mo
 
 ----------------------------------------------------------------------------------------------
 ### 2.Open-Hole Tensile Specimen
-Reference:
+Reference: **_Larry Pearce, Sr.Lead application engineer, MSC Software, ʻʻProgressive ply failure in composites,ʼʼ Webinar on May 15, 2012_**
+
+**Input Parameters**
+
+<p align="left">
+<img src="resources/Picture20.jpg" width="500">
+<img src="resources/Picture21.png" width="400">
+</p>
+
+**Benchmark Results**
+
+<p align="left">
+<img src="resources/Picture22.jpg" width="500">
+</p>
+
+**UMAT Results**
+<p align="left">
+<img src="resources/Picture23.png" width="600">
+</p>
+
+<p align="left">
+<img src="resources/Picture24.png" width="400">
+<img src="resources/Picture25.png" width="380">
+<img src="resources/Picture26.png" width="350">
+</p>
 
 ----------------------------------------------------------------------------------------------
+
 ### 3.Worldwide Failure Exercise
 Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)_**
 
@@ -379,9 +407,42 @@ Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)
 
 ## User Guide Manual
 
-### UMAT Subroutines 
+### Linking FORTRAN with ABAQUS
 
-**User-defined property data for the UMAT subroutine**
+In order to run user subroutines within ABAQUS analysis, Intel Fortran Compiler is required to be installed and linked to ABAQUS
+
+The Intel fortran compiler version need to be compitable with the specific ABAQUS version installed on the machine
+
+The following link provided some guidance on this process: [Linking FORTRAN and ABAQUS](https://grabcad.com/tutorials/linking-abaqus-and-fortran)
+
+**Importrant Remark:**
+Please note that ABAQUS user subroutines are written in fortran fixed format, which has the file type extension _(.for)_ This form is restrictive and care should be taken with respect to indents in code syntax, alternatively fortran free form can be used by including the directive: `!DIR$ FREEFORM` to Intel fortran compiler, more info [here](https://stackoverflow.com/questions/49040255/using-subroutines-written-in-fortran-90-with-abaqus-standard)
+
+----------------------------------------------------------------------------------------------
+
+### Running UMAT,VUMAT Subroutines in ABAQUS GUI
+
+<p align="left">
+<img src="resources/Picture27.png">
+</p>
+
+<p align="left">
+<img src="resources/Picture28.png">
+</p>
+
+<p align="left">
+<img src="resources/Picture29.png">
+</p>
+
+<p align="left">
+<img src="resources/Picture30.png">
+</p>
+
+<p align="left">
+<img src="resources/Picture31.png">
+</p>
+
+### UMAT Input Parameters Table
 
 |**PROPS Array Entry**|**Variable Name**|**Description**|
 |---|---|---|
@@ -416,7 +477,7 @@ Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)
 |57,58|E11F, ANU12F|Puck: Fiber elastic modulus and Poisson ratio|
 
 
-**UMAT-defined solution-dependent variables**
+### UMAT-defined solution-dependent variables
 
 |**STATEV Array Entry**|**Variable Name**|**Description**|
 |---|---|---|
@@ -435,7 +496,15 @@ Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)
 |13| DelEl| Element deletion variable|
 
 ----------------------------------------------------------------------------------------------
-### PDALAC Testing Program 
+### Debugging and Testing 
+
+- The subroutines can be debugged and tested by including intermediate `Write(*,*)` statements to check the flow of calculations, the output of these statements can be checked in the **compile.log** file generated by the compiler once the job is submitted in ABAQUS. This approach however is not effective for large models since the subroutine is called at each integration point, therfore a seperate standalone program is created for testing the numerical implementation called [PDALAC](https://gitlab.lrz.de/Ammar.Kh/softwarelab19-group11-umat/tree/master/Code/Final%20Set/PDALAC%20Standalone) which allows the user to visulaize the progressive damage of a material point under 3D stress conditions without the need of conducing FEA, the program is written in FORTRAN 95 freeform and integrated with [GNUPlot](http://www.gnuplot.info/) for visualization
+
+- The program can be run using any FORTRAN IDE/Compiler such as: Gfortran,PlatoIDE,IntelFortran 
+
+- The different modules files need to be linked together when running the program from the main.f95 file as illustrated [here](http://fortranwiki.org/fortran/show/Compiling+and+linking+modules)
+
+
 
 <p align="left">
 <img src="resources/Picture15.png" width="500">
@@ -447,3 +516,27 @@ Reference: **_Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)
 
 
 ## References
+
+- Abaqus, U. S. M., & Manuals, E. U. S. (2002). Version 6.3, Hibbitt, Karlsson & Sorensen. Inc. Rhode Island.
+- Ramesh V. Bammankatti, Lakshminarayana H. V. , Kiran Kumar N, 2014, Stress Analysis and Ultimate Strength Prediction of Laminated Composite Panels With Cutouts, INTERNATIONAL JOURNAL OF ENGINEERING RESEARCH & TECHNOLOGY (IJERT) Volume 03, Issue 08 (August 2014)
+- Hinton, M. J. K. A., Kaddour, A. S., & Soden, P. D. (Eds.). (2004)
+- Knight Jr, N. F., & Reeder, J. R. (2006). User-defined material model for progressive failure analysis
+- Kaw, A. K. (2005). Mechanics of composite materials. CRC press
+- ATAR, M. B. (2016). EXPERIMENTAL AND NUMERICAL FAILURE ANALYSIS OF ADVANCED COMPOSITE STRUCTURES WITH HOLES (Doctoral dissertation, MIDDLE EAST TECHNICAL UNIVERSITY)
+- Berger, A. (2014). Numerical Modelling of Composite Materials Based on a Combined Manufacturing-Crash Simulation(Doctoral dissertation, Queen Mary University of London)
+- Larry Pearce, Sr.Lead application engineer, MSC Software, ʻʻProgressive ply failure in composites,ʼʼ Webinar on May 15, 2012
+- Altug Emiroglu, Master Thesis: Comparative Study of Puck and Tsai-Wu Failure Criteria, Technische Universität München, 2013
+- H. Deuschle. 3D failure analysis of UD fibre reinforced composites: Puck’s theory within FEA. Phd thesis, Universität Stuttgart, 2010
+- Nahas, M. N. (1986). Yield and ultimate strengths of fibre composite laminates. Composite structures, 6(4), 283-294
+- Nahas, M. N. (1986). Survey of failure and post-failure theories of laminated fiber-renforced composites. Journal of Composites, Technology and Research, 8(4), 138-153
+- Reddy, Y. S. N., Moorthy, C. D., & Reddy, J. N. (1995). Non-linear progressive failure analysis of laminated composite plates. International Journal of Non-Linear Mechanics, 30(5), 629-649
+- Hahn, H. T., & Tsai, S. W. (1974). On the behavior of composite laminates after initial failures. Journal of Composite Materials, 8(3), 288-305
+- Matzenmiller, A. L. J. T. R., Lubliner, J., & Taylor, R. L. (1995). A constitutive model for anisotropic damage in fiber-composites. Mechanics of materials, 20(2), 125-152
+- Sleight, D. W. (1999). Progressive failure analysis methodology for laminated composite structures
+- Cuntze RG, Deska R, Szelinski B, JeltschFricker R, Meckbach S, Huybrechts D, Kopp J, Kroll L, Gollwitzer S, Rackwitz R. Neue Bruchkriterien und Festigkeitsnachweise fuer unidirektionalen Faserkunststoffverbund unter mehrachsiger Beanspruchung -Modellbildung und Experimente. In: VDI Fortschritt-Berichte. Duesseldorf: VDI Verlag, 1997
+
+
+
+
+
+
